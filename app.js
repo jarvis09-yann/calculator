@@ -3,7 +3,6 @@ const display = document.querySelector("#display-text");
 
 const operations = {
   total: 0,
-
   add(a, b) {
     this.total = parseFloat(a) + parseFloat(b);
   },
@@ -101,6 +100,45 @@ function handleOperations(op) {
       console.log("Unexpected operation!");
   }
 }
+
+document.addEventListener("keydown", (e) => {
+  e.preventDefault(); // TODO: find better way, rn it block every kb shortcut
+  switch (e.key) {
+    case "Enter":
+      handleOperations("=");
+      break;
+    case "Backspace":
+      handleOperations("DEL");
+      break;
+    case "Escape":
+    case "Delete":
+      handleOperations("CE");
+      break;
+    case "%":
+      handleOperations("%");
+      break;
+    case "+":
+      handleOperations("+");
+      break;
+    case "-":
+      handleOperations("-");
+      break;
+    case "*":
+      handleOperations("x");
+      break;
+    case "/":
+      handleOperations("÷");
+      break;
+    case ".":
+      handleNumbers(".");
+      break;
+    default:
+      if (e.key >= "0" && e.key <= "9") {
+        handleNumbers(e.key);
+      }
+      break;
+  }
+});
 
 function reset() {
   a = "";
