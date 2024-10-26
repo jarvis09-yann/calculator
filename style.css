@@ -40,6 +40,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5), 0 5px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 .display-container,
@@ -63,12 +64,18 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
+  user-select: none;
 }
 
 #display-text,
 #typing-indicator {
   font-size: 32px;
   font-weight: 1000;
+}
+
+#display-text {
+  max-width: 90%;
+  overflow: hidden;
 }
 
 #typing-indicator {
@@ -121,14 +128,14 @@ body {
   font-size: 24px;
   font-weight: 800;
   user-select: none;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
 .special-key {
   background-color: var(--c-accent);
-}
-
-#EQUAL {
-  flex: 3 0 165px;
 }
 
 #CLEAR,
