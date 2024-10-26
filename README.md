@@ -12,4 +12,4 @@ It has amazing features such as:
 - can add numbers together!
 - that's all what do you expect it's a calculator. it wont wash your dishes or smth lmao
 
-[GH pages deplpyment](https://jarvis09-yann.github.io/calculator/)
+[GH pages deployment](https://jarvis09-yann.github.io/calculator/)
