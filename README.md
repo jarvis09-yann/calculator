@@ -7,9 +7,10 @@
 
 It has amazing features such as:
 
-- insults you if you're foolish enough to divide by zero
+- insulting you if you're foolish enough to divide by zero
 - keyboard support
-- can add numbers together!
+- can add numbers together, substract, and even divide them!!
+- It contains the solution to the universe
 - that's all what do you expect it's a calculator. it wont wash your dishes or smth lmao
 
 [GH pages deployment](https://jarvis09-yann.github.io/calculator/)
